@@ -1,0 +1,81 @@
+
+
+section.title-container
+{
+    position: relative;
+    
+    h1
+    {
+        color: @header_color;
+        margin-bottom: 40px;
+    }
+
+    .button
+    {
+        .buttons( @border_color: @font_color );
+    }    
+
+    .info
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    img
+    {
+        display: block;
+        width: 90%;
+        height: 800px;
+        margin: 0 auto;
+        margin-bottom: 50px; 
+    }
+}
+
+.artists-container
+{
+    margin-top: 35px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+    .artist
+    {
+        width: 50%;
+
+        .c
+        {
+            display: flex;
+            flex-direction: column;
+
+            img
+            {
+                .img();
+            }
+        }
+
+        .d
+        {
+            background-color: green;
+        }
+    }
+    
+    
+
+    // .c
+    // {
+    //     background-color: blue;
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 50%;
+    //     img
+    //     {
+    //         .img();
+    //     }
+    // }
+}
