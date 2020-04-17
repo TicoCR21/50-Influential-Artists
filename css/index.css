@@ -110,6 +110,11 @@ section {
 img:hover {
   opacity: 80%;
 }
+.bio {
+  margin: 0 40px;
+  text-align: center;
+  font-size: 1.4rem;
+}
 header {
   height: 13vh;
   display: flex;
@@ -156,7 +161,6 @@ section.title-container img {
 }
 .artists-container {
   margin-top: 35px;
-  background-color: blue;
   display: flex;
   justify-content: center;
   width: 80%;
@@ -167,12 +171,19 @@ section.title-container img {
 .artists-container .artist .c {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .artists-container .artist .c img {
   width: 500px;
   height: 400px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
-.artists-container .artist .d {
-  background-color: green;
+.artists-container .artist .c .d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.artists-container .artist .c .d a {
+  margin-bottom: 30px;
 }

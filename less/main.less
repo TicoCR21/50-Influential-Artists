@@ -39,7 +39,6 @@ section.title-container
 .artists-container
 {
     margin-top: 35px;
-    background-color: blue;
     display: flex;
     justify-content: center;
     width: 80%;
@@ -50,32 +49,24 @@ section.title-container
 
         .c
         {
-            display: flex;
-            flex-direction: column;
+            .center_c();
 
             img
             {
                 .img();
+                margin-bottom: 30px;
+            }
+            
+            .d
+            {
+                .center_c(); 
+                
+                a
+                {
+                    margin-bottom: 30px;
+                }
             }
         }
 
-        .d
-        {
-            background-color: green;
-        }
     }
-    
-    
-
-    // .c
-    // {
-    //     background-color: blue;
-    //     display: flex;
-    //     flex-direction: column;
-    //     width: 50%;
-    //     img
-    //     {
-    //         .img();
-    //     }
-    // }
 }
