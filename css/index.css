@@ -97,11 +97,29 @@ a {
   font-size: 2rem;
   text-decoration: none;
 }
+@media (max-width: 600px) {
+  a {
+    font-size: 1.5rem;
+  }
+}
 a:hover {
   font-weight: bolder;
 }
 h1 {
   font-size: 5rem;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 section {
   width: 80%;
@@ -127,9 +145,20 @@ header nav ul {
   align-items: center;
   list-style-type: none;
 }
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
 header nav ul .side_borders {
   border-left: 2px solid rgba(0, 0, 0, 0.7);
   border-right: 2px solid rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 600px) {
+  header nav ul .side_borders {
+    flex-direction: column;
+    border-color: transparent;
+  }
 }
 section.title-container {
   position: relative;
@@ -165,8 +194,18 @@ section.title-container img {
   justify-content: center;
   width: 80%;
 }
+@media (max-width: 900px) {
+  .artists-container {
+    flex-direction: column;
+  }
+}
 .artists-container .artist {
   width: 50%;
+}
+@media (max-width: 900px) {
+  .artists-container .artist {
+    width: 100%;
+  }
 }
 .artists-container .artist .c {
   display: flex;
@@ -180,6 +219,7 @@ section.title-container img {
   margin-bottom: 30px;
 }
 .artists-container .artist .c .d {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;

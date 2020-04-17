@@ -11,6 +11,11 @@ a
     color: @font_color;
     font-size: 2rem;
     text-decoration: none;
+
+    @media @screen
+    {
+        font-size: 1.5rem;
+    }
 }
 
 a:hover
@@ -21,6 +26,18 @@ a:hover
 h1
 {
     font-size: 5rem;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+
+    @media @tablet
+    {
+        font-size: 3.5rem;
+    }
+    @media @screen
+    {
+        font-size: 2rem;
+    }
 }
 
 section
@@ -36,7 +53,7 @@ img:hover
 
 .bio
 {
-    margin: 0 40px;
+   margin: 0 40px;
    text-align: center;
    font-size: 1.4rem;
 }

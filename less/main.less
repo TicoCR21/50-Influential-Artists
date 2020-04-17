@@ -43,9 +43,19 @@ section.title-container
     justify-content: center;
     width: 80%;
 
+    @media @tablet
+    {
+        flex-direction: column;
+    }
+
     .artist
     {
         width: 50%;
+
+        @media @tablet
+        {
+            width: 100%;
+        }
 
         .c
         {
@@ -59,8 +69,8 @@ section.title-container
             
             .d
             {
+                margin-bottom: 30px;
                 .center_c(); 
-                
                 a
                 {
                     margin-bottom: 30px;
